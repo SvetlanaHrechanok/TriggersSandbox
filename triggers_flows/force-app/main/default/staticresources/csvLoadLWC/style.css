@@ -1,0 +1,399 @@
+/*
+**  REMOVE PAGE HEADER
+*/
+div.oneFlexipage {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 0;
+}
+
+div.pageBody {
+  width: 100%;
+  height: 100%;
+}
+
+div.flexipagePage {
+  width: 100%;
+  height: 100%;
+}
+
+div.regions.flexipageDefaultAppHomeTemplate {
+  width: 100%;
+  height: 100%;
+}
+
+div.flexipageDefaultAppHomeTemplate .region {
+  margin-bottom: 0;
+}
+
+div.region {
+  width: 100%;
+  height: 100%;
+}
+
+div.flexipageComponent {
+  width: 100%;
+  height: 100%;
+}
+
+app_flexipage-header[app_flexipage-lwcAppFlexipageDecorator_lwcAppFlexipageDecorator] {
+  display: none;
+}
+
+
+/*
+**  COMPONENT
+*/
+.csv-loader__wrapper {
+  height: 100%;
+}
+
+.csv-loader__wrapper .slds-page-header {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border: 1px solid #DDDBDA;
+  border-radius: 0.25rem 0.25rem 0 0;
+  box-shadow: unset;
+  padding: 0.7rem 1rem;
+}
+
+.csv-loader__wrapper .slds-page-header__controls {
+  align-items: center;
+}
+
+.csv-loader__wrapper .slds-page-header__controls .refresh {
+  display: flex;
+  align-items: center;
+  color: #313131;
+  padding-right: 1.5rem;
+}
+
+.csv-loader__wrapper .slds-page-header__controls .refresh span {
+  margin-right: 1rem;
+}
+
+.csv-loader__wrapper .slds-page-header__controls .refresh span:last-child {
+  margin-right: 0;
+}
+
+.csv-loader__wrapper .slds-media {
+  align-items: center;
+}
+
+.csv-loader__wrapper .slds-page-header__col-title {
+  min-width: 250pt;
+}
+
+.csv-loader__wrapper .slds-page-header__col-actions {
+  padding-bottom: 0;
+}
+
+.csv-loader__wrapper .slds-page-header__col-status {
+  padding-bottom: 0;
+  width: 100%;
+  flex-shrink: 1;
+}
+
+.spinner-style{
+  background-color:#f3f2f2;
+  position: relative;
+  height: 80px;
+}
+
+.slds-spinner_container{
+  background-color:#f3f2f2;  
+}
+
+.slds-page-header__col-records-on-page .slds-combobox_container {
+  min-width: 100pt;
+  width: 150pt;
+}
+
+.slds-page-header__col-records-to-parse .slds-combobox_container {
+  min-width: 100pt;
+  width: 150pt;
+  margin-right: 0pt;
+}
+
+/*  ICON  */
+.csv-loader__figure .slds-icon_container {
+  background-color:  #03993c;
+}
+
+
+.csv-loader__content {
+  max-height: calc(100% - 55px);
+  min-height: 70px;
+  overflow-y: auto;
+  position: relative;
+  padding: 0.7rem 1rem;
+  border: 1px solid #DDDBDA;
+  border-top: 0;
+  border-radius: 0 0 0.25rem 0.25rem;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.10);
+}
+
+
+/*
+**  TABLE
+*/
+.csv-loader__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/*  TABLE TITLE  */
+.csv-loader__table tbody tr.table__title td {
+  padding: 2rem 0.5rem 0.25rem 0.5rem;
+}
+
+.csv-loader__table tbody:first-child tr.table__title td {
+  padding-top: 0.25rem;
+}
+
+/*  TITLE  */
+.csv-loader__table tbody tr.table__title td .title__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.csv-loader__table tbody tr.table__title td .title__wrapper .title {
+  margin-right: 0.5rem;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  /* font-weight: 700; */
+  color: #313131;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.csv-loader__table tbody tr.table__title td .title__wrapper .count {
+  margin-right: 0.5rem;
+}
+
+.csv-loader__table tbody tr.table__title td .title__wrapper .unauthorized {
+  color: #D60501;
+}
+
+.csv-loader__table tbody tr.table__title td .title__wrapper .count-hidden {
+  color: #D60501;
+}
+
+/*  THEAD  */
+.csv-loader__table tbody tr.table__thead td {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.8px;
+  padding: 0.25rem 0.5rem;
+  background-color: #FAFAF9;
+  color: #514F4D;
+  border-top: 1px solid #DDDBDA;
+  border-bottom: 1px solid #DDDBDA;
+}
+
+/*  TBODY TR  */
+.csv-loader__table tbody tr.table__tr {
+  position: relative;
+}
+
+.csv-loader__table tbody tr.table__no-records td p {
+  color: #080707;
+  font-size: 13px;
+  padding: 0.25rem 0.5rem;
+}
+
+.csv-loader__table tbody tr.table__tr td {
+  padding: 0.25rem 0.5rem;
+  border-top: 1px solid #DDDBDA;
+  border-bottom: 1px solid #DDDBDA;
+}
+
+.csv-loader__table tbody tr.table__tr td .slds-dropdown-trigger{
+  background-color: #FFFFFF;
+}
+
+.csv-loader__table tbody tr.table__tr:hover td {
+  background-color: #FBFBFB;
+}
+
+/*  TD CHECKBOX */
+.csv-loader__table tbody td.table__td-checkbox {
+  width: 32px;
+}
+.csv-loader__table tbody td.table__td-checkbox .slds-form-element .slds-checkbox [type=checkbox]+.slds-checkbox__label .slds-checkbox_faux {
+  margin-right: 0;
+}
+
+/*  TD ICON */
+.csv-loader__table tbody td.table__td-icon {
+  position: relative;
+  width: 32px;
+}
+
+/*  TD ACTION */
+.csv-loader__table tbody td.table__td-action {
+  width: 36px;
+}
+
+/*  TD HELPTEXT */
+/* .csv-loader__table tbody td.table__td-helptext .slds-button.slds-button_icon {
+  color: rgb(195 191 185);
+} */
+
+/* DATE NA */
+.csv-loader__table .table__date-na {
+  font-size: 10px;
+  color: #777777;
+}
+
+/*  TBODY UNLINCKED  */
+.csv-loader__table tbody.csv-loader__tbody-unlinked tr.table__title td .title__wrapper .title {
+  color: #D60501;
+}
+
+.csv-loader__table tbody.csv-loader__tbody-unlinked tr.table__thead td {
+  background-color: #FFF4F4;
+  border-top: 1px solid #ECBFC1;
+  border-bottom: 1px solid #ECBFC1;
+  color: #D60501;
+}
+
+.csv-loader__table tbody.csv-loader__tbody-unlinked tr.table__tr td {
+  border-top: 1px solid #ECBFC1;
+  border-bottom: 1px solid #ECBFC1;
+}
+
+.csv-loader__table tbody.csv-loader__tbody-unlinked tr.table__tr:hover td {
+  background-color: #fff9f9;
+}
+
+/*  NOTIFICATION  */
+.csv-loader__notification {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.csv-loader__notification .slds-scoped-notification {
+  padding: 15px 20px;
+  border-radius: 3px;
+  background-color: #222222;
+}
+
+.csv-loader__notification .slds-media__figure {
+  position: relative;
+  width: 32px;
+}
+
+/*  PROGRESS  */
+.csv-loader__table tbody .table__progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.csv-loader__table tbody .table__progress .slds-spinner_container {
+  background-color: transparent;
+}
+
+.csv-loader__table tbody .table__progress .slds-spinner:before,
+.csv-loader__table tbody .table__progress .slds-spinner:after,
+.csv-loader__table tbody .table__progress .slds-spinner__dot-a:before,
+.csv-loader__table tbody .table__progress .slds-spinner__dot-b:before,
+.csv-loader__table tbody .table__progress .slds-spinner__dot-a:after,
+.csv-loader__table tbody .table__progress .slds-spinner__dot-b:after {
+  width: 3px;
+  height: 3px;
+}
+
+/*  TBODY TR STATUSES  */
+.csv-loader__table tbody tr.table__tr.table__tr-progress td {
+  background-color: rgba(255, 115, 2, 0.03);
+}
+
+.csv-loader__table tbody tr.table__tr.table__tr-progress:hover td {
+  background-color: rgba(255, 115, 2, 0.07);
+}
+
+.csv-loader__table tbody tr.table__tr.table__tr-success td {
+  background-color: rgba(2, 126, 70, 0.03);
+}
+
+.csv-loader__table tbody tr.table__tr.table__tr-success:hover td {
+  background-color: rgba(2, 126, 70, 0.07);
+}
+
+.csv-loader__table tbody tr.table__tr.table__tr-error td {
+  background-color: rgba(194, 57, 52, 0.03);
+}
+
+.csv-loader__table tbody tr.table__tr.table__tr-error:hover td {
+  background-color: rgba(194, 57, 52, 0.07);
+}
+
+.csv-loader__table tbody tr.table__tr.table__tr-validate td.table__td-icon svg.slds-icon {
+  fill: #6495ed;
+}
+
+.csv-loader__table tbody tr.table__tr.table__tr-validate.table__tr-error td.table__td-icon svg.slds-icon,
+.csv-loader__table tbody tr.table__tr.table__tr-сancelled td.table__td-icon svg.slds-icon {
+  fill: #c23934;
+}
+
+.modal-confirm__message {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/*
+**  MODAL HISTORY CONTENT
+*/
+section.modal-history-content .slds-modal__content {
+  position: relative;
+  min-height: 70px;
+  padding: 0;
+}
+
+
+/*
+**  SORTING
+*/
+.table__sort {
+  position: relative;
+  cursor: pointer;
+}
+
+.table__sort.table__sort-asc,
+.table__sort.table__sort-desc {
+  padding-right: 1rem;
+}
+
+.table__sort.table__sort-asc:after,
+.table__sort.table__sort-desc:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.table__sort.table__sort-asc:after {
+  border-bottom: 5px solid #706E6B;
+}
+
+.table__sort.table__sort-desc:after {
+  border-top: 5px solid #706E6B;
+}

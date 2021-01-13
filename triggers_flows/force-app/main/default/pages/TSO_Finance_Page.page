@@ -1,0 +1,60 @@
+<apex:page standardController="sitetracker__Project__c" extensions="sitetracker.StBaseController" >
+
+   <sitetracker:StFinanceOverview parentId="{!sitetracker__Project__c.Id}"
+       columnLabels="ID,
+                     Segment (child),
+                     Line Item,
+                     PO Status,
+                     PO Num,
+                     Amount,
+                     Cost,
+                     Net,
+                     Invoiced,
+                     Remaining,
+                     Forecast,
+                     Actual,
+                     Check #,
+                     Payment Date,
+                     Invoice Status,
+                     Invoice Date,
+                     Hold back %"
+     financeFields="Name,
+                     Segment_child__c,
+                     sitetracker__PO_Line_Item__c,
+                     sitetracker__PO_Status__c,
+                     sitetracker__PO_Number__c,
+                     sitetracker__Amount__c,
+                     sitetracker__Vendor_Payment_Total__c,
+                     sitetracker__Net__c,
+                     sitetracker__Amount_Approved_to_Invoice__c,
+                     sitetracker__Remaining_to_Invoice__c,
+                     sitetracker__Forecast_Date__c,
+                     sitetracker__Actual_Date__c,
+                     Check__c,
+                     Payment_Date__c,
+                     sitetracker__Invoice_Status__c,
+                     sitetracker__Invoice_Date__c,
+                     Hold_back__c
+                     "
+     expenseFields="Name,
+                     sitetracker__Vendor__c,
+                     ,
+                     sitetracker__Vendor_PO_Status__c,
+                     sitetracker__Vendor_PO_Number__c,
+                     ,
+                     sitetracker__Vendor_Cost__c,
+                     ,
+                     ,
+                     ,
+                     ,
+                     ,
+                     Check__c,
+                     Payment_Date__c,
+                     sitetracker__Vendor_Invoice_Status__c,
+                     sitetracker__Vendor_Invoice_Received__c,
+                     ,"
+     orderBy="sitetracker__Finance__c.Name"
+     inlineEditRowLimit="50"
+   />
+   <!--sitetracker:StVisualforceContainerMessagePost /-->
+</apex:page>

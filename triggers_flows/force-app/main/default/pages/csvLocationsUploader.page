@@ -1,0 +1,45 @@
+<apex:page controller="importDataFromCSVController" title="Locations Uploader">
+    <style>
+        .controlPanel td{
+            width:200px;
+        }
+        .controlPanel{
+            margin-top:20px;
+        }
+    </style>    
+    <apex:form >                    
+        <apex:pageBlock id="controlPanel">                        
+            <table class="controlPanel fromFile">
+                <tr>
+                    <td colspan="2"><b>Upload a CSV file to save its contents as CSVLocation(Staging) records</b></td>
+                </tr>
+                <tr>
+                    <td>Upload CSV file</td><td><apex:inputFile value="{!csvFileBody}" accept="csv" contentType="text/csv" /></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td><td><apex:commandButton value="Upload CSV" action="{!readCSVLocationsFromFile}"/></td>
+                </tr>
+            </table>                                                             
+        </apex:pageBlock>
+
+        <apex:pageBlock id="dataPanel">
+            <apex:pageblocktable id="dPblockTable" value="{!lstCSVLocationsStaging}" var="con">
+                <apex:repeat value="{!lstFieldNames}" var="fieldName">
+                    <apex:column value="{!con[fieldName]}" />
+                </apex:repeat>                
+            </apex:pageblocktable>
+        </apex:pageBlock>
+
+
+        <apex:pageBlock id="dataPanel2">
+            <apex:pagemessages />
+            <apex:pageblocktable id="dPblockTable2" value="{!lstCSVLocationsStaging2}" var="con2">
+                <apex:repeat value="{!lstFieldNames}" var="fieldName">
+                    <apex:column value="{!con2[fieldName]}" />
+                </apex:repeat>                
+            </apex:pageblocktable>
+            <apex:commandButton value="Save to CSVLocation(Staging)" action="{!saveCSVLocationsData}" rendered="{!readSuccess}" />
+        </apex:pageBlock>
+
+    </apex:form>        
+</apex:page>

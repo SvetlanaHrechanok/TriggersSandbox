@@ -1,0 +1,11 @@
+.THIS .isActivityLoading .slds-spinner_container {
+    position: relative !important;
+ }
+
+ .THIS .slds-card__body{
+     min-height: 600px;
+ }
+
+ .THIS.scrollerSize {
+    height: 300px;
+}

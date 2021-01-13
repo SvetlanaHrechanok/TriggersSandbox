@@ -1,0 +1,3 @@
+<apex:page action="{!URLFOR($Action.sitetracker__Project__c.View,Access_Node_New_Build__c.Project__r.Id)}" standardController="Access_Node_New_Build__c">
+    <apex:outputField value="{!Access_Node_New_Build__c.Project__r.Id}"/>
+</apex:page>

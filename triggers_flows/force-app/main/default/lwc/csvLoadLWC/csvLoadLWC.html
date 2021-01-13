@@ -1,0 +1,89 @@
+<template>
+	<div class="csv-loader__wrapper">
+
+		<!-- HEADER -->
+		<div class="slds-page-header">
+			<div class="slds-page-header__row">
+
+				<!-- HEADER TITLE -->
+				<div class="slds-page-header__col-title">
+					<div class="slds-media">
+						<div class="slds-media__figure csv-loader__figure">
+							<lightning-icon icon-name="custom:custom18" alternative-text={title} title={title}></lightning-icon>
+						</div>
+						<div class="slds-media__body">
+							<div class="slds-page-header__name">
+								<div class="slds-page-header__name-title">
+									<h1><span class="slds-page-header__title slds-truncate" title={title}>{title}</span></h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<lightning-input type="file" label={fileName} accept=".csv" onchange={handleFilesChange}>
+					</lightning-input>
+				</div>
+
+				<!-- HEADER ACTIONS -->
+				<div class="slds-page-header__col-status">
+					<div if:true={loading} class="spinner-style">
+						<div class="slds-spinner_container">
+							<div role="status" class="slds-spinner slds-spinner_medium slds-spinner_brand">
+								<span class="slds-assistive-text">Loading</span>
+								<div class="slds-spinner__dot-a"></div>
+								<div class="slds-spinner__dot-b"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- HEADER ACTIONS -->
+				<div class="slds-page-header__col-actions">
+					<div class="slds-page-header__controls">
+						<div class="slds-page-header__control">
+							<lightning-button-group>
+								<lightning-button variant="destructive" label="Clear Data" title="Clear Data" onclick={clearData}>
+								</lightning-button>
+							</lightning-button-group>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- BODY -->
+		<div class="csv-loader__content">
+			<div class="content-header__row">
+				<div class="slds-grid slds-gutters">
+					<div class="slds-col slds-size_2-of-12">
+						<!-- COMBOBOX RECORDS ON PAGE -->
+						<lightning-combobox
+							name="linesOnPage"
+							label="Records on page"
+							value={linesOnPage}
+							placeholder="Select count"
+							options={linesOnPageSelect}
+							onchange={linesOnPageChange} ></lightning-combobox>
+					</div>
+
+					<div class="slds-col slds-size_8-of-12"></div>
+
+					<!-- COMBOBOX LINES TO PARSE -->
+					<div class="slds-col slds-size_2-of-12">
+						<lightning-combobox
+							name="linesToParse"
+							label="Lines to parse"
+							value={linesToParse}
+							placeholder="Select count"
+							options={linesToParseSelect}
+							onchange={linesToParseChange} ></lightning-combobox>
+					</div>
+				</div>
+			</div>
+
+			<table class="csv-loader__table">
+
+			</table>
+		</div>
+
+	</div>
+</template>

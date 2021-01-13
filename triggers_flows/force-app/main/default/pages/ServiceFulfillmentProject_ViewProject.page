@@ -1,0 +1,3 @@
+<apex:page action="{!URLFOR($Action.sitetracker__Project__c.View,Service_Fulfillment_Project__c.Project__r.Id)}" standardController="Service_Fulfillment_Project__c">
+	<apex:outputField value="{!Service_Fulfillment_Project__c.Project__r.Id}"/>
+</apex:page>

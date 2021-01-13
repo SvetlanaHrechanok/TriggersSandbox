@@ -1,0 +1,3 @@
+<apex:page action="{!URLFOR($Action.sitetracker__Project__c.New, Access_Node_Collocation__c.Project__r.Id)}" showHeader="true" sidebar="true" standardController="Access_Node_Collocation__c">
+   <apex:outputField value="{!Access_Node_Collocation__c.Project__r.Id}"/>
+</apex:page>
